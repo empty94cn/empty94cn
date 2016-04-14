@@ -327,7 +327,7 @@
 <h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><p>新建github仓库，命名为[xxx<strong>.github.io</strong>]</p>
 <p>在之前安装的hexo的文件夹中，找到<strong>_config.yml</strong>打开（vim或者文本打开都行）</p>
 <p>在文件最下面，修改成这样：</p>
-<p>deploy:<br>    type: git<br>    repo:git@github.com:empty94cn/empty94cn.github.io.git<br>    branch:master</p>
+<p><strong>deploy:</strong><br>    <strong>type: git</strong><br>    <strong>repo:git@github.com:empty94cn/empty94cn.github.io.git</strong><br>    <strong>branch:master</strong></p>
 <p>我的hexo版本是3.2.0，这样配置应该没问题，type：github或着其他的不同的配置应该是较低版本的hexo的设置。然后执行命令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git--save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <h2 id="然后再浏览器中输入http-xxx-github-io-就行了"><a href="#然后再浏览器中输入http-xxx-github-io-就行了" class="headerlink" title="然后再浏览器中输入http://xxx.github.io/就行了"></a>然后再浏览器中输入<a href="http://xxx.github.io/就行了" target="_blank" rel="external">http://xxx.github.io/就行了</a></h2>
