@@ -212,9 +212,39 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="#" class="st-search-show-outputs">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  <form class="site-search-form">
+  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
+</form>
+
+<script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install', 'PpE4pMRZSg-LaXxBV6Kc','2.0.0');
+</script>
+
+
+
+    </div>
   
 </nav>
 
@@ -314,23 +344,14 @@
           
             <p>一直都想给自己搭一个技术博客来记(zhuang)录(bi)，但是自己太忙(lan)了，最近折腾前端的时候经常能解锁新的姿势，但是苦于没有记录的地方，所以为了以后方便自己复习，同时为了提高自习的写作表达能力，我决定是时候给自己搭一个博客了，搭建步骤：</p>
 <h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p><strong>Node</strong>，<strong>Git</strong>，<strong>Github</strong>(用来做博客的远程创库、域名、服务器之类的)</p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>环境配置好后，建一个文件夹用来存放hexo配置文件，然后安装hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> 新建文件夹</span><br><span class="line">$ npm install hexo -g</span><br></pre></td></tr></table></figure>
-<p>执行init命令初始化hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure>
-<p>生成静态页面</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>启动本地服务，进行文章预览调试</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>提示Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a></p>
-<p>在浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
-<h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><p>新建github仓库，命名为[xxx<strong>.github.io</strong>]</p>
-<p>在之前安装的hexo的文件夹中，找到<strong>_config.yml</strong>打开（vim或者文本打开都行）</p>
-<p>在文件最下面，修改成这样：</p>
-<p><strong>deploy:</strong><br>    <strong>type: git</strong><br>    <strong>repo:git@github.com:empty94cn/empty94cn.github.io.git</strong><br>    <strong>branch:master</strong></p>
-<p>我的hexo版本是3.2.0，这样配置应该没问题，type：github或着其他的不同的配置应该是较低版本的hexo的设置。然后执行命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git--save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<h2 id="然后再浏览器中输入http-xxx-github-io-就行了"><a href="#然后再浏览器中输入http-xxx-github-io-就行了" class="headerlink" title="然后再浏览器中输入http://xxx.github.io/就行了"></a>然后再浏览器中输入<a href="http://xxx.github.io/就行了" target="_blank" rel="external">http://xxx.github.io/就行了</a></h2>
+<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>环境配置好后，建一个文件夹用来存放hexo配置文件，然后安装hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> 新建文件夹</span><br><span class="line">$ npm install hexo -g</span><br></pre></td></tr></table></figure></p>
+<p>执行init命令初始化hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
+<p>生成静态页面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
+<p>启动本地服务，进行文章预览调试<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
+<p>提示Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br>在浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a></p>
+<h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><p>新建github仓库，命名为[xxx<strong>.github.io</strong>]<br>在之前安装的hexo的文件夹中，找到<strong>_config.yml</strong>打开（vim或者文本打开都行）<br>在文件最下面，修改成这样：<br><strong>deploy:</strong><br>    <strong>type: git</strong><br>    <strong>repo:git@github.com:empty94cn/empty94cn.github.io.git</strong><br>    <strong>branch:master</strong><br>我的hexo版本是3.2.0，这样配置应该没问题，type：github或着其他的不同的配置应该是较低版本的hexo的设置。然后执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git--save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>然后再浏览器中输入<a href="http://xxx.github.io/就行了" target="_blank" rel="external">http://xxx.github.io/就行了</a></p>
+
           
         
       
