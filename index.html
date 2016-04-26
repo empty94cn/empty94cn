@@ -354,8 +354,9 @@
 <p>(终端提示生成的文件路径)找到<code>id_rsa.pub</code>用终端进入编辑，复制生成的密钥。登陆Github,点击右侧用户按钮，选择Settings,点击 Add SSH key 按钮，将复制的密钥粘贴到 Key 栏.</p>
 <p>在之前安装的hexo的文件夹中，找到<strong>_config.yml</strong>打开（vim或者文本打开都行）<br>在文件最下面，修改成这样：</p>
 <blockquote>
-<p><strong>deploy:</strong><br>   <strong>type: git</strong><br>   <strong>repo:git@github.com:empty94cn/empty94cn.github.io.git</strong><br>   <strong>branch:master</strong><br>empty94cn是我的用户名，大家记得改成自己的用户名<br>我的hexo版本是3.2.0，这样配置应该没问题，type：github或着其他的不同的配置应该是较低版本的hexo的设置。然后执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git--save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p><strong>deploy:</strong><br>   <strong>type: git</strong><br>   <strong>repo:git@github.com:empty94cn/empty94cn.github.io.git</strong><br>   <strong>branch:master</strong></p>
 </blockquote>
+<p>empty94cn是我的用户名，大家记得改成自己的用户名<br>我的hexo版本是3.2.0，这样配置应该没问题，type：github或着其他的不同的配置应该是较低版本的hexo的设置。然后执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git--save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
 <p>然后再浏览器中输入<a href="http://your_user_name.github.io/就能访问你的博客了" target="_blank" rel="external">http://your_user_name.github.io/就能访问你的博客了</a></p>
 
           
