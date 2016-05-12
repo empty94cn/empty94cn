@@ -279,6 +279,123 @@
             
               
                 
+                <a class="post-title-link" href="/2016/05/12/CSS实现三角形图标/" itemprop="url">
+                  CSS实现三角形图标
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-05-12T16:29:27+08:00" content="2016-05-12">
+              2016-05-12
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/前端基础/" itemprop="url" rel="index">
+                    <span itemprop="name">前端基础</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>最近在尝试做一个聊天室的demo，在样式设计上我一直都很好奇<br><img src="images／CSS实现三角形图标/1.png" alt="img"><br>泡泡框后面的小尾巴是怎么实现的－。－，简直神奇，于是我去百，哦不谷歌了一下<br><strong>首先</strong>把元素的宽高设置为0<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.caret</span>&#123;</span><br><span class="line">		<span class="attribute">width</span>:<span class="number">0px</span>;</span><br><span class="line">		<span class="attribute">height</span>:<span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>然后</strong>改变它的boder样式<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.caret</span>&#123;</span><br><span class="line">		<span class="attribute">width</span>:<span class="number">0px</span>;</span><br><span class="line">		<span class="attribute">height</span>:<span class="number">0px</span>;</span><br><span class="line">		<span class="attribute">border-top</span>: <span class="number">40px</span> solid red;</span><br><span class="line">		<span class="attribute">border-right</span>: <span class="number">40px</span> solid transparent;</span><br><span class="line">		<span class="attribute">border-left</span>: <span class="number">40px</span> solid transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="images／CSS实现三角形图标/2.png" alt="img"><br>五体投地，膝盖都碎了，可是为啥？？？我们先做个实验，把样式改成<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.caret</span>&#123;</span><br><span class="line">		<span class="attribute">width</span>:<span class="number">0px</span>;</span><br><span class="line">		<span class="attribute">height</span>:<span class="number">0px</span>;</span><br><span class="line">		<span class="attribute">border-top</span>: <span class="number">40px</span> solid red;</span><br><span class="line">		<span class="attribute">border-right</span>: <span class="number">40px</span> solid black;</span><br><span class="line">		<span class="attribute">border-left</span>: <span class="number">40px</span> solid black;</span><br><span class="line">		<span class="attribute">border-bottom</span>: <span class="number">40px</span> solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="images／CSS实现三角形图标/3.png" alt="img"><br>我们再把下边框去掉<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.caret</span>&#123;</span><br><span class="line">		<span class="attribute">width</span>:<span class="number">0px</span>;</span><br><span class="line">		<span class="attribute">height</span>:<span class="number">0px</span>;</span><br><span class="line">		<span class="attribute">border-top</span>: <span class="number">40px</span> solid red;</span><br><span class="line">		<span class="attribute">border-right</span>: <span class="number">40px</span> solid black;</span><br><span class="line">		<span class="attribute">border-left</span>: <span class="number">40px</span> solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><img src="images／CSS实现三角形图标/4.png" alt="img"></p>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/04/26/Hexo折腾笔记-二/" itemprop="url">
                   Hexo折腾笔记(二)
                 </a>
@@ -460,8 +577,8 @@
 <p>执行init命令初始化hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
 <p>生成静态页面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
 <p>启动本地服务，进行文章预览调试<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-<p>提示Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br>在浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a><br>不出意外的话，它应该是像下图这个样子的（图片来源于网络）<br><img src="images/3.jpg" alt="img"></p>
-<h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><p>登陆Github账号后，点击右上角的“+”号按钮，选择“New repository”<br><img src="images/1.png" alt="img"><br>新建github仓库，命名为[your_user_name<strong>.github.io</strong>]<br><img src="images/2.png" alt="img"><br>远程代码是基于SSH的，所以需要SSH的相关配置。方法是现在本地生成SSH公钥，然后添加到Github上面。具体的操作如下：<br>(1)设置你的邮箱和用户名：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">"你的邮箱"</span></span><br><span class="line">$ git config --global user.name <span class="string">"你的名字"</span></span><br></pre></td></tr></table></figure></p>
+<p>提示Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br>在浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a><br>不出意外的话，它应该是像下图这个样子的（图片来源于网络）<br><img src="images／Hexo折腾笔记-一/3.jpg" alt="img"></p>
+<h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><p>登陆Github账号后，点击右上角的“+”号按钮，选择“New repository”<br><img src="images／Hexo折腾笔记-一/1.png" alt="img"><br>新建github仓库，命名为[your_user_name<strong>.github.io</strong>]<br><img src="images／Hexo折腾笔记-一/2.png" alt="img"><br>远程代码是基于SSH的，所以需要SSH的相关配置。方法是现在本地生成SSH公钥，然后添加到Github上面。具体的操作如下：<br>(1)设置你的邮箱和用户名：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">"你的邮箱"</span></span><br><span class="line">$ git config --global user.name <span class="string">"你的名字"</span></span><br></pre></td></tr></table></figure></p>
 <p>(2)生成密钥,设置密码,输入的密码不会显示（也可以不设置，按三次回车，密码为空）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"你的邮箱"</span></span><br></pre></td></tr></table></figure></p>
 <p>(终端提示生成的文件路径)找到<code>id_rsa.pub</code>用终端进入编辑，复制生成的密钥。登陆Github,点击右侧用户按钮，选择Settings,点击 Add SSH key 按钮，将复制的密钥粘贴到 Key 栏.</p>
 <p>在之前安装的hexo的文件夹中，找到<strong>_config.yml</strong>打开（vim或者文本打开都行）<br>在文件最下面，修改成这样：</p>
@@ -641,7 +758,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -649,7 +766,7 @@
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -658,7 +775,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
