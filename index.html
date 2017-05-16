@@ -272,6 +272,193 @@
             
               
                 
+                <a class="post-title-link" href="/2017/05/16/Markdown语法/" itemprop="url">
+                  Markdown语法
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2017-05-16T21:32:21+08:00" content="2017-05-16">
+              2017-05-16
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/折腾/" itemprop="url" rel="index">
+                    <span itemprop="name">折腾</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h3 id="Line-Breaks"><a href="#Line-Breaks" class="headerlink" title="Line Breaks"></a>Line Breaks</h3><p>To force a line break, put two spaces and a newline (return) at the end of the line.</p>
+<ul>
+<li><p>This two-line bullet<br>won’t break</p>
+</li>
+<li><p>This two-line bullet<br>will break</p>
+</li>
+</ul>
+<p>Here is the code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* This two-line bullet </span><br><span class="line">won&apos;t break</span><br><span class="line"></span><br><span class="line">* This two-line bullet  </span><br><span class="line">will break</span><br></pre></td></tr></table></figure>
+<h3 id="Strong-and-Emphasize"><a href="#Strong-and-Emphasize" class="headerlink" title="Strong and Emphasize"></a>Strong and Emphasize</h3><p><strong>Strong</strong>: <code>**Strong**</code> or <code>__Strong__</code> (Command-B)<br><em>Emphasize</em>: <code>*Emphasize*</code> or <code>_Emphasize_</code>[^emphasize] (Command-I)</p>
+<h3 id="Headers-like-this-one"><a href="#Headers-like-this-one" class="headerlink" title="Headers (like this one!)"></a>Headers (like this one!)</h3><pre><code>Header 1
+========
+
+Header 2
+--------
+</code></pre><p>or</p>
+<pre><code># Header 1
+## Header 2
+### Header 3
+#### Header 4
+##### Header 5
+###### Header 6
+</code></pre><h3 id="Links-and-Email"><a href="#Links-and-Email" class="headerlink" title="Links and Email"></a>Links and Email</h3><h4 id="Inline"><a href="#Inline" class="headerlink" title="Inline"></a>Inline</h4><p>Just put angle brackets around an email and it becomes clickable: <a href="&#109;&#x61;&#105;&#x6c;&#116;&#x6f;&#58;&#117;&#x72;&#97;&#110;&#x75;&#115;&#x6a;&#114;&#x40;&#103;&#109;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;">&#117;&#x72;&#97;&#110;&#x75;&#115;&#x6a;&#114;&#x40;&#103;&#109;&#97;&#105;&#108;&#x2e;&#x63;&#111;&#x6d;</a><br><code>&lt;uranusjr@gmail.com&gt;</code>  </p>
+<p>Same thing with urls: <a href="http://macdown.uranusjr.com" target="_blank" rel="external">http://macdown.uranusjr.com</a><br><code>&lt;http://macdown.uranusjr.com&gt;</code>  </p>
+<p>Perhaps you want to some link text like this: <a href="http://macdown.uranusjr.com" title="Title" target="_blank" rel="external">Macdown Website</a><br><code>[Macdown Website](http://macdown.uranusjr.com &quot;Title&quot;)</code> (The title is optional)  </p>
+<h4 id="Reference-style"><a href="#Reference-style" class="headerlink" title="Reference style"></a>Reference style</h4><p>Sometimes it looks too messy to include big long urls inline, or you want to keep all your urls together.  </p>
+<p>Make <a href="http://macdown.uranusjr.com" title="Title" target="_blank" rel="external">a link</a> <code>[a link][arbitrary_id]</code> then on it’s own line anywhere else in the file:<br><code>[arbitrary_id]: http://macdown.uranusjr.com &quot;Title&quot;</code></p>
+<p>If the link text itself would make a good id, you can link <a href="http://macdown.uranusjr.com" target="_blank" rel="external">like this</a> <code>[like this][]</code>, then on it’s own line anywhere else in the file:<br><code>[like this]: http://macdown.uranusjr.com</code>  </p>
+<h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><h4 id="Inline-1"><a href="#Inline-1" class="headerlink" title="Inline"></a>Inline</h4><p><code>![Alt Image Text](path/or/url/to.jpg &quot;Optional Title&quot;)</code></p>
+<h4 id="Reference-style-1"><a href="#Reference-style-1" class="headerlink" title="Reference style"></a>Reference style</h4><p><code>![Alt Image Text][image-id]</code><br>on it’s own line elsewhere:<br><code>[image-id]: path/or/url/to.jpg &quot;Optional Title&quot;</code></p>
+<h3 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h3><ul>
+<li>Lists must be preceded by a blank line (or block element)</li>
+<li>Unordered lists start each item with a <code>*</code></li>
+</ul>
+<ul>
+<li><code>-</code> works too<ul>
+<li>Indent a level to make a nested list<ol>
+<li>Ordered lists are supported.</li>
+<li>Start each item (number-period-space) like <code>1.</code></li>
+<li>It doesn’t matter what number you use, I will render them sequentially</li>
+<li>So you might want to start each line with <code>1.</code> and let me sort it out</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<p>Here is the code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">* Lists must be preceded by a blank line (or block element)</span><br><span class="line">* Unordered lists start each item with a `*`</span><br><span class="line">- `-` works too</span><br><span class="line">	* Indent a level to make a nested list</span><br><span class="line">		1. Ordered lists are supported.</span><br><span class="line">		2. Start each item (number-period-space) like `1. `</span><br><span class="line">		42. It doesn&apos;t matter what number you use, I will render them sequentially</span><br><span class="line">		1. So you might want to start each line with `1.` and let me sort it out</span><br></pre></td></tr></table></figure>
+<h3 id="Block-Quote"><a href="#Block-Quote" class="headerlink" title="Block Quote"></a>Block Quote</h3><blockquote>
+<p>Angle brackets <code>&gt;</code> are used for block quotes.<br>Technically not every line needs to start with a <code>&gt;</code> as long as<br>there are no empty lines between paragraphs.<br>Looks kinda ugly though.</p>
+<blockquote>
+<p>Block quotes can be nested.  </p>
+<blockquote>
+<p>Multiple Levels</p>
+</blockquote>
+</blockquote>
+<p>Most markdown syntaxes work inside block quotes.</p>
+<ul>
+<li>Lists</li>
+<li><a href="http://macdown.uranusjr.com" title="Title" target="_blank" rel="external">Links</a></li>
+<li>Etc.</li>
+</ul>
+</blockquote>
+<p>Here is the code:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt; Angle brackets `&gt;` are used for block quotes.  </span><br><span class="line">Technically not every line needs to start with a `&gt;` as long as</span><br><span class="line">there are no empty lines between paragraphs.  </span><br><span class="line">&gt; Looks kinda ugly though.</span><br><span class="line">&gt; &gt; Block quotes can be nested.  </span><br><span class="line">&gt; &gt; &gt; Multiple Levels</span><br><span class="line">&gt;</span><br><span class="line">&gt; Most markdown syntaxes work inside block quotes.</span><br><span class="line">&gt;</span><br><span class="line">&gt; * Lists</span><br><span class="line">&gt; * [Links][arbitrary_id]</span><br><span class="line">&gt; * Etc.</span><br></pre></td></tr></table></figure>
+<h3 id="Inline-Code"><a href="#Inline-Code" class="headerlink" title="Inline Code"></a>Inline Code</h3><p><code>Inline code</code> is indicated by surrounding it with backticks:<br><code>`Inline code` </code></p>
+<p>If your <code>code has `backticks` </code> that need to be displayed, you can use double backticks:<br><code>``Code with `backticks` `` </code>  (mind the spaces preceding the final set of backticks)</p>
+<h3 id="Block-Code"><a href="#Block-Code" class="headerlink" title="Block Code"></a>Block Code</h3><p>If you indent at least four spaces or one tab, I’ll display a code block.</p>
+<pre><code>print(&apos;This is a code block&apos;)
+print(&apos;The block must be preceded by a blank line&apos;)
+print(&apos;Then indent at least 4 spaces or 1 tab&apos;)
+    print(&apos;Nesting does nothing. Your code is displayed Literally&apos;)
+</code></pre><p>I also know how to do something called <a href="#fenced-code-block">Fenced Code Blocks</a> which I will tell you about later.</p>
+<h3 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h3><p>If you type three asterisks <code>***</code> or three dashes <code>---</code> on a line, I’ll display a horizontal rule:</p>
+<hr>
+
+          
+        
+      
+    </div>
+    
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/05/12/CSS实现三角形图标/" itemprop="url">
                   CSS实现三角形图标
                 </a>
@@ -639,7 +826,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">3</span>
+              <span class="site-state-item-count">4</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -656,7 +843,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -712,8 +899,8 @@
       <div class="footer-inner">
         <div class="copyright" >
   
-  &copy; 
-  <span itemprop="copyrightYear">2016</span>
+  &copy;  2016 - 
+  <span itemprop="copyrightYear">2017</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
