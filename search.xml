@@ -1,137 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
-  
-  
-    
-    <entry>
-      <title><![CDATA[Markdown语法]]></title>
-      <url>http://yoursite.com/2017/05/16/Markdown%E8%AF%AD%E6%B3%95/</url>
-      <content type="html"><![CDATA[<h3 id="Line-Breaks"><a href="#Line-Breaks" class="headerlink" title="Line Breaks"></a>Line Breaks</h3><p>To force a line break, put two spaces and a newline (return) at the end of the line.</p>
-<ul>
-<li><p>This two-line bullet<br>won’t break</p>
-</li>
-<li><p>This two-line bullet<br>will break</p>
-</li>
-</ul>
-<p>Here is the code:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">* This two-line bullet </span><br><span class="line">won&apos;t break</span><br><span class="line"></span><br><span class="line">* This two-line bullet  </span><br><span class="line">will break</span><br></pre></td></tr></table></figure>
-<h3 id="Strong-and-Emphasize"><a href="#Strong-and-Emphasize" class="headerlink" title="Strong and Emphasize"></a>Strong and Emphasize</h3><p><strong>Strong</strong>: <code>**Strong**</code> or <code>__Strong__</code> (Command-B)<br><em>Emphasize</em>: <code>*Emphasize*</code> or <code>_Emphasize_</code>[^emphasize] (Command-I)</p>
-<h3 id="Headers-like-this-one"><a href="#Headers-like-this-one" class="headerlink" title="Headers (like this one!)"></a>Headers (like this one!)</h3><pre><code>Header 1
-========
-
-Header 2
---------
-</code></pre><p>or</p>
-<pre><code># Header 1
-## Header 2
-### Header 3
-#### Header 4
-##### Header 5
-###### Header 6
-</code></pre><h3 id="Links-and-Email"><a href="#Links-and-Email" class="headerlink" title="Links and Email"></a>Links and Email</h3><h4 id="Inline"><a href="#Inline" class="headerlink" title="Inline"></a>Inline</h4><p>Just put angle brackets around an email and it becomes clickable: <a href="&#x6d;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#117;&#x72;&#x61;&#x6e;&#117;&#x73;&#106;&#114;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;">&#117;&#x72;&#x61;&#x6e;&#117;&#x73;&#106;&#114;&#64;&#103;&#x6d;&#97;&#x69;&#x6c;&#46;&#99;&#x6f;&#109;</a><br><code>&lt;uranusjr@gmail.com&gt;</code>  </p>
-<p>Same thing with urls: <a href="http://macdown.uranusjr.com" target="_blank" rel="external">http://macdown.uranusjr.com</a><br><code>&lt;http://macdown.uranusjr.com&gt;</code>  </p>
-<p>Perhaps you want to some link text like this: <a href="http://macdown.uranusjr.com" title="Title" target="_blank" rel="external">Macdown Website</a><br><code>[Macdown Website](http://macdown.uranusjr.com &quot;Title&quot;)</code> (The title is optional)  </p>
-<h4 id="Reference-style"><a href="#Reference-style" class="headerlink" title="Reference style"></a>Reference style</h4><p>Sometimes it looks too messy to include big long urls inline, or you want to keep all your urls together.  </p>
-<p>Make <a href="http://macdown.uranusjr.com" title="Title" target="_blank" rel="external">a link</a> <code>[a link][arbitrary_id]</code> then on it’s own line anywhere else in the file:<br><code>[arbitrary_id]: http://macdown.uranusjr.com &quot;Title&quot;</code></p>
-<p>If the link text itself would make a good id, you can link <a href="http://macdown.uranusjr.com" target="_blank" rel="external">like this</a> <code>[like this][]</code>, then on it’s own line anywhere else in the file:<br><code>[like this]: http://macdown.uranusjr.com</code>  </p>
-<h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><h4 id="Inline-1"><a href="#Inline-1" class="headerlink" title="Inline"></a>Inline</h4><p><code>![Alt Image Text](path/or/url/to.jpg &quot;Optional Title&quot;)</code></p>
-<h4 id="Reference-style-1"><a href="#Reference-style-1" class="headerlink" title="Reference style"></a>Reference style</h4><p><code>![Alt Image Text][image-id]</code><br>on it’s own line elsewhere:<br><code>[image-id]: path/or/url/to.jpg &quot;Optional Title&quot;</code></p>
-<h3 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h3><ul>
-<li>Lists must be preceded by a blank line (or block element)</li>
-<li>Unordered lists start each item with a <code>*</code></li>
-</ul>
-<ul>
-<li><code>-</code> works too<ul>
-<li>Indent a level to make a nested list<ol>
-<li>Ordered lists are supported.</li>
-<li>Start each item (number-period-space) like <code>1.</code></li>
-<li>It doesn’t matter what number you use, I will render them sequentially</li>
-<li>So you might want to start each line with <code>1.</code> and let me sort it out</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<p>Here is the code:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">* Lists must be preceded by a blank line (or block element)</span><br><span class="line">* Unordered lists start each item with a `*`</span><br><span class="line">- `-` works too</span><br><span class="line">	* Indent a level to make a nested list</span><br><span class="line">		1. Ordered lists are supported.</span><br><span class="line">		2. Start each item (number-period-space) like `1. `</span><br><span class="line">		42. It doesn&apos;t matter what number you use, I will render them sequentially</span><br><span class="line">		1. So you might want to start each line with `1.` and let me sort it out</span><br></pre></td></tr></table></figure>
-<h3 id="Block-Quote"><a href="#Block-Quote" class="headerlink" title="Block Quote"></a>Block Quote</h3><blockquote>
-<p>Angle brackets <code>&gt;</code> are used for block quotes.<br>Technically not every line needs to start with a <code>&gt;</code> as long as<br>there are no empty lines between paragraphs.<br>Looks kinda ugly though.</p>
-<blockquote>
-<p>Block quotes can be nested.  </p>
-<blockquote>
-<p>Multiple Levels</p>
-</blockquote>
-</blockquote>
-<p>Most markdown syntaxes work inside block quotes.</p>
-<ul>
-<li>Lists</li>
-<li><a href="http://macdown.uranusjr.com" title="Title" target="_blank" rel="external">Links</a></li>
-<li>Etc.</li>
-</ul>
-</blockquote>
-<p>Here is the code:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&gt; Angle brackets `&gt;` are used for block quotes.  </span><br><span class="line">Technically not every line needs to start with a `&gt;` as long as</span><br><span class="line">there are no empty lines between paragraphs.  </span><br><span class="line">&gt; Looks kinda ugly though.</span><br><span class="line">&gt; &gt; Block quotes can be nested.  </span><br><span class="line">&gt; &gt; &gt; Multiple Levels</span><br><span class="line">&gt;</span><br><span class="line">&gt; Most markdown syntaxes work inside block quotes.</span><br><span class="line">&gt;</span><br><span class="line">&gt; * Lists</span><br><span class="line">&gt; * [Links][arbitrary_id]</span><br><span class="line">&gt; * Etc.</span><br></pre></td></tr></table></figure>
-<h3 id="Inline-Code"><a href="#Inline-Code" class="headerlink" title="Inline Code"></a>Inline Code</h3><p><code>Inline code</code> is indicated by surrounding it with backticks:<br><code>`Inline code` </code></p>
-<p>If your <code>code has `backticks` </code> that need to be displayed, you can use double backticks:<br><code>``Code with `backticks` `` </code>  (mind the spaces preceding the final set of backticks)</p>
-<h3 id="Block-Code"><a href="#Block-Code" class="headerlink" title="Block Code"></a>Block Code</h3><p>If you indent at least four spaces or one tab, I’ll display a code block.</p>
-<pre><code>print(&apos;This is a code block&apos;)
-print(&apos;The block must be preceded by a blank line&apos;)
-print(&apos;Then indent at least 4 spaces or 1 tab&apos;)
-    print(&apos;Nesting does nothing. Your code is displayed Literally&apos;)
-</code></pre><p>I also know how to do something called <a href="#fenced-code-block">Fenced Code Blocks</a> which I will tell you about later.</p>
-<h3 id="Horizontal-Rules"><a href="#Horizontal-Rules" class="headerlink" title="Horizontal Rules"></a>Horizontal Rules</h3><p>If you type three asterisks <code>***</code> or three dashes <code>---</code> on a line, I’ll display a horizontal rule:</p>
-<hr>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[CSS实现三角形图标]]></title>
-      <url>http://yoursite.com/2016/05/12/CSS%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9B%BE%E6%A0%87/</url>
-      <content type="html"><![CDATA[<p>最近在尝试做一个聊天室的demo，在样式设计上我一直都很好奇<br><img src="http://o724kd1uj.bkt.clouddn.com/4.png" alt="img"><br>泡泡框后面的小尾巴是怎么实现的－。－，简直神奇，于是我去百，哦不谷歌了一下<br><strong>首先</strong>把元素的宽高设置为0<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.caret</span>&#123;</span><br><span class="line"><span class="attribute">width</span>:<span class="number">0px</span>;</span><br><span class="line"><span class="attribute">height</span>:<span class="number">0px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>然后</strong>改变它的boder样式<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.caret</span>&#123;</span><br><span class="line"><span class="attribute">width</span>:<span class="number">0px</span>;</span><br><span class="line"><span class="attribute">height</span>:<span class="number">0px</span>;</span><br><span class="line"><span class="attribute">border-top</span>: <span class="number">40px</span> solid red;</span><br><span class="line"><span class="attribute">border-right</span>: <span class="number">40px</span> solid transparent;</span><br><span class="line"><span class="attribute">border-left</span>: <span class="number">40px</span> solid transparent;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://o724kd1uj.bkt.clouddn.com/5.png" alt="img"><br>五体投地，膝盖都碎了，可是为啥？？？我们先做个实验，把样式改成<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.caret</span>&#123;</span><br><span class="line"><span class="attribute">width</span>:<span class="number">0px</span>;</span><br><span class="line"><span class="attribute">height</span>:<span class="number">0px</span>;</span><br><span class="line"><span class="attribute">border-top</span>: <span class="number">40px</span> solid red;</span><br><span class="line"><span class="attribute">border-right</span>: <span class="number">40px</span> solid black;</span><br><span class="line"><span class="attribute">border-left</span>: <span class="number">40px</span> solid black;</span><br><span class="line"><span class="attribute">border-bottom</span>: <span class="number">40px</span> solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://o724kd1uj.bkt.clouddn.com/6.png" alt="img"><br>我们再把下边框去掉<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.caret</span>&#123;</span><br><span class="line"><span class="attribute">width</span>:<span class="number">0px</span>;</span><br><span class="line"><span class="attribute">height</span>:<span class="number">0px</span>;</span><br><span class="line"><span class="attribute">border-top</span>: <span class="number">40px</span> solid red;</span><br><span class="line"><span class="attribute">border-right</span>: <span class="number">40px</span> solid black</span><br><span class="line">border-left: <span class="number">40px</span> solid black;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p><img src="http://o724kd1uj.bkt.clouddn.com/7.png" alt="img"><br>这下诸君大概知道第一个三角形怎么来的了吧，把左右边框透明就行<br>另外如果我门修改border的px值，还会得到很多其他不同形状的三角形</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hexo折腾笔记(一)]]></title>
-      <url>http://yoursite.com/2016/04/14/Hexo%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0-%E4%B8%80/</url>
-      <content type="html"><![CDATA[<p>一直都想给自己搭一个技术博客来记(zhuang)录(bi)，但是自己太忙(lan)了，最近折腾前端的时候经常能解锁新的姿势，但是苦于没有记录的地方，所以为了以后方便自己复习，同时为了提高自己的写作表达能力，我决定是时候给自己搭一个博客了，搭建步骤：</p>
-<h3 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h3><p><strong>Node</strong>，<strong>Git</strong>，<strong>Github</strong>(用来做博客的远程创库、域名、服务器之类的,注意一定要验证Github的验证邮件.)</p>
-<h3 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><p>环境配置好后，建一个文件夹用来存放hexo配置文件，然后安装hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> 新建文件夹</span><br><span class="line">$ npm install hexo -g</span><br></pre></td></tr></table></figure></p>
-<p>执行init命令初始化hexo<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init</span><br></pre></td></tr></table></figure></p>
-<p>生成静态页面<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure></p>
-<p>启动本地服务，进行文章预览调试<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure></p>
-<p>提示Hexo is running at <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br>在浏览器输入<a href="http://localhost:4000" target="_blank" rel="external">http://localhost:4000</a><br>不出意外的话，它应该是像下图这个样子的（图片来源于网络）<br><img src="http://o724kd1uj.bkt.clouddn.com/3.jpg" alt="img"></p>
-<h3 id="配置github"><a href="#配置github" class="headerlink" title="配置github"></a>配置github</h3><p>登陆Github账号后，点击右上角的“+”号按钮，选择“New repository”<br><img src="http://o724kd1uj.bkt.clouddn.com/1.png" alt="img"><br>新建github仓库，命名为[your_user_name<strong>.github.io</strong>]<br><img src="http://o724kd1uj.bkt.clouddn.com/2.png" alt="img"><br>远程代码是基于SSH的，所以需要SSH的相关配置。方法是现在本地生成SSH公钥，然后添加到Github上面。具体的操作如下：<br>(1)设置你的邮箱和用户名：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.email <span class="string">"你的邮箱"</span></span><br><span class="line">$ git config --global user.name <span class="string">"你的名字"</span></span><br></pre></td></tr></table></figure></p>
-<p>(2)生成密钥,设置密码,输入的密码不会显示（也可以不设置，按三次回车，密码为空）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ssh-keygen -t rsa -C <span class="string">"你的邮箱"</span></span><br></pre></td></tr></table></figure></p>
-<p>(终端提示生成的文件路径)找到<code>id_rsa.pub</code>用终端进入编辑，复制生成的密钥。登陆Github,点击右侧用户按钮，选择Settings,点击 Add SSH key 按钮，将复制的密钥粘贴到 Key 栏.</p>
-<p>在之前安装的hexo的文件夹中，找到<strong>_config.yml</strong>打开（vim或者文本打开都行）<br>在文件最下面，修改成这样：</p>
-<blockquote>
-<p><strong>deploy:</strong><br>   <strong>type: git</strong><br>   <strong>repo: git@github.com:your_user_name/your_user_name.github.io.git</strong><br>   <strong>branch: master</strong></p>
-</blockquote>
-<p>我的hexo版本是3.2.0，这样配置应该没问题，type：github或着其他的不同的配置应该是较低版本的hexo的设置。然后执行命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git--save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure></p>
-<p>然后再浏览器中输入<a href="http://your_user_name.github.io/就能访问你的博客了" target="_blank" rel="external">http://your_user_name.github.io/就能访问你的博客了</a></p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[Hello World]]></title>
-      <url>http://yoursite.com/2016/04/13/hello-world/</url>
-      <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-]]></content>
-    </entry>
-    
-  
-  
+  <entry>
+    <title><![CDATA[Markdown语法]]></title>
+    <url>%2F2017%2F05%2F16%2FMarkdown%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[Line BreaksTo force a line break, put two spaces and a newline (return) at the end of the line. This two-line bulletwon’t break This two-line bulletwill break Here is the code: 12345* This two-line bullet won&apos;t break* This two-line bullet will break Strong and EmphasizeStrong: **Strong** or __Strong__ (Command-B)Emphasize: *Emphasize* or _Emphasize_[^emphasize] (Command-I) Headers (like this one!)Header 1 ======== Header 2 -------- or # Header 1 ## Header 2 ### Header 3 #### Header 4 ##### Header 5 ###### Header 6 Links and EmailInlineJust put angle brackets around an email and it becomes clickable: &#x75;&#x72;&#97;&#110;&#x75;&#115;&#x6a;&#114;&#x40;&#x67;&#109;&#x61;&#105;&#108;&#46;&#99;&#x6f;&#x6d;&lt;uranusjr@gmail.com&gt; Same thing with urls: http://macdown.uranusjr.com&lt;http://macdown.uranusjr.com&gt; Perhaps you want to some link text like this: Macdown Website[Macdown Website](http://macdown.uranusjr.com &quot;Title&quot;) (The title is optional) Reference styleSometimes it looks too messy to include big long urls inline, or you want to keep all your urls together. Make a link [a link][arbitrary_id] then on it’s own line anywhere else in the file:[arbitrary_id]: http://macdown.uranusjr.com &quot;Title&quot; If the link text itself would make a good id, you can link like this [like this][], then on it’s own line anywhere else in the file:[like this]: http://macdown.uranusjr.com ImagesInline![Alt Image Text](path/or/url/to.jpg &quot;Optional Title&quot;) Reference style![Alt Image Text][image-id]on it’s own line elsewhere:[image-id]: path/or/url/to.jpg &quot;Optional Title&quot; Lists Lists must be preceded by a blank line (or block element) Unordered lists start each item with a * - works too Indent a level to make a nested list Ordered lists are supported. Start each item (number-period-space) like 1. It doesn’t matter what number you use, I will render them sequentially So you might want to start each line with 1. and let me sort it out Here is the code: 12345678* Lists must be preceded by a blank line (or block element)* Unordered lists start each item with a `*`- `-` works too * Indent a level to make a nested list 1. Ordered lists are supported. 2. Start each item (number-period-space) like `1. ` 42. It doesn&apos;t matter what number you use, I will render them sequentially 1. So you might want to start each line with `1.` and let me sort it out Block Quote Angle brackets &gt; are used for block quotes.Technically not every line needs to start with a &gt; as long asthere are no empty lines between paragraphs.Looks kinda ugly though. Block quotes can be nested. Multiple Levels Most markdown syntaxes work inside block quotes. Lists Links Etc. Here is the code: 123456789101112&gt; Angle brackets `&gt;` are used for block quotes. Technically not every line needs to start with a `&gt;` as long asthere are no empty lines between paragraphs. &gt; Looks kinda ugly though.&gt; &gt; Block quotes can be nested. &gt; &gt; &gt; Multiple Levels&gt;&gt; Most markdown syntaxes work inside block quotes.&gt;&gt; * Lists&gt; * [Links][arbitrary_id]&gt; * Etc. Inline CodeInline code is indicated by surrounding it with backticks:`Inline code` If your code has `backticks` that need to be displayed, you can use double backticks:``Code with `backticks` `` (mind the spaces preceding the final set of backticks) Block CodeIf you indent at least four spaces or one tab, I’ll display a code block. print(&apos;This is a code block&apos;) print(&apos;The block must be preceded by a blank line&apos;) print(&apos;Then indent at least 4 spaces or 1 tab&apos;) print(&apos;Nesting does nothing. Your code is displayed Literally&apos;) I also know how to do something called Fenced Code Blocks which I will tell you about later. Horizontal RulesIf you type three asterisks *** or three dashes --- on a line, I’ll display a horizontal rule:]]></content>
+      <categories>
+        <category>折腾</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[CSS实现三角形图标]]></title>
+    <url>%2F2016%2F05%2F12%2FCSS%E5%AE%9E%E7%8E%B0%E4%B8%89%E8%A7%92%E5%BD%A2%E5%9B%BE%E6%A0%87%2F</url>
+    <content type="text"><![CDATA[最近在尝试做一个聊天室的demo，在样式设计上我一直都很好奇泡泡框后面的小尾巴是怎么实现的－。－，简直神奇，于是我去百，哦不谷歌了一下首先把元素的宽高设置为01234.caret&#123;width:0px;height:0px;&#125; 然后改变它的boder样式1234567.caret&#123;width:0px;height:0px;border-top: 40px solid red;border-right: 40px solid transparent;border-left: 40px solid transparent;&#125; 五体投地，膝盖都碎了，可是为啥？？？我们先做个实验，把样式改成12345678.caret&#123;width:0px;height:0px;border-top: 40px solid red;border-right: 40px solid black;border-left: 40px solid black;border-bottom: 40px solid red;&#125; 我们再把下边框去掉1234567.caret&#123;width:0px;height:0px;border-top: 40px solid red;border-right: 40px solid blackborder-left: 40px solid black;&#125; 这下诸君大概知道第一个三角形怎么来的了吧，把左右边框透明就行另外如果我门修改border的px值，还会得到很多其他不同形状的三角形]]></content>
+      <categories>
+        <category>前端基础</category>
+      </categories>
+      <tags>
+        <tag>CSS</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hexo折腾笔记(一)]]></title>
+    <url>%2F2016%2F04%2F14%2FHexo%E6%8A%98%E8%85%BE%E7%AC%94%E8%AE%B0-%E4%B8%80%2F</url>
+    <content type="text"><![CDATA[一直都想给自己搭一个技术博客来记(zhuang)录(bi)，但是自己太忙(lan)了，最近折腾前端的时候经常能解锁新的姿势，但是苦于没有记录的地方，所以为了以后方便自己复习，同时为了提高自己的写作表达能力，我决定是时候给自己搭一个博客了，搭建步骤： 环境Node，Git，Github(用来做博客的远程创库、域名、服务器之类的,注意一定要验证Github的验证邮件.) 安装Hexo环境配置好后，建一个文件夹用来存放hexo配置文件，然后安装hexo12$ cd 新建文件夹$ npm install hexo -g 执行init命令初始化hexo1$ hexo init 生成静态页面1$ hexo generate 启动本地服务，进行文章预览调试1$ hexo server 提示Hexo is running at http://localhost:4000/在浏览器输入http://localhost:4000不出意外的话，它应该是像下图这个样子的（图片来源于网络） 配置github登陆Github账号后，点击右上角的“+”号按钮，选择“New repository”新建github仓库，命名为[your_user_name.github.io]远程代码是基于SSH的，所以需要SSH的相关配置。方法是现在本地生成SSH公钥，然后添加到Github上面。具体的操作如下：(1)设置你的邮箱和用户名：12$ git config --global user.email "你的邮箱"$ git config --global user.name "你的名字" (2)生成密钥,设置密码,输入的密码不会显示（也可以不设置，按三次回车，密码为空）1$ ssh-keygen -t rsa -C "你的邮箱" (终端提示生成的文件路径)找到id_rsa.pub用终端进入编辑，复制生成的密钥。登陆Github,点击右侧用户按钮，选择Settings,点击 Add SSH key 按钮，将复制的密钥粘贴到 Key 栏. 在之前安装的hexo的文件夹中，找到_config.yml打开（vim或者文本打开都行）在文件最下面，修改成这样： deploy: type: git repo: git@github.com:your_user_name/your_user_name.github.io.git branch: master 我的hexo版本是3.2.0，这样配置应该没问题，type：github或着其他的不同的配置应该是较低版本的hexo的设置。然后执行命令：12$ npm install hexo-deployer-git--save$ hexo deploy 然后再浏览器中输入http://your_user_name.github.io/就能访问你的博客了]]></content>
+      <categories>
+        <category>折腾</category>
+      </categories>
+      <tags>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2F2016%2F04%2F13%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
 </search>
